@@ -1,0 +1,18 @@
+{
+  "name": "DoubleJ Spotify Redirect",
+  "version": "1.0",
+  "description": "Ensures desktop browsers go to the correct Spotify results page from the DoubleJ playlist page",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2,
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://open.spotify.com/*"
+  ],
+  "icons": {
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  }
+}
