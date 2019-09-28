@@ -2,7 +2,6 @@
 
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) {
-    console.log(details.url);
     return { redirectUrl: details.url.replace('play.spotify.com/search/results/', 'open.spotify.com/search/') }
   },
   {
