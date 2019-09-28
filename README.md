@@ -1,9 +1,10 @@
 # DoubleJ Spotify Redirect
 
-[Chrome extension](https://chrome.google.com/webstore/detail/doublej-spotify-redirect/eojhejnceealjegfffgkpkfepjkggpmd)
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/doublej-spotify-redirect/)
+[Chrome](https://chrome.google.com/webstore/detail/doublej-spotify-redirect/eojhejnceealjegfffgkpkfepjkggpmd)
 
-DoubleJ has useful links from [the Playlist page](http://doublej.net.au/playlist) to Spotify web client. These links appear broken on desktop browsers. This extension adds the /results/ into the URL necessary to show the page.
+Double J has useful links from [the Playlist page](http://doublej.net.au/playlist) to Spotify web client. These links appear broken on desktop browsers. This extension redirects search results to the correct page.
 
 ## License
 
-Code copyright Mark Andrews. Code released under [the MIT license](LICENSE.txt).
+[MIT](LICENSE.txt).
