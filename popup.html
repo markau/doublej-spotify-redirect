@@ -3,23 +3,104 @@
 <head>
   <title>DoubleJ Spotify</title>
   <style>
+    body {
+      padding: 5px;
+      /* width: 200px; */
+    }
+
+    .display-none {
+      display: none;
+    }
+
     .artwork {
-      width: 200px;
+      width: 180px;
+      transition: opacity 0.4s ease-in;
+      -webkit-transition: opacity 0.4s ease-in;
+      -moz-transition: opacity 0.4s ease-in;
+      -ms-transition: opacity 0.4s ease-in;
+      -o-transition: opacity 0.4s ease-in;
+      opacity: 1;
+      margin-top: 2px;
+
+    }
+
+    .artwork-transition {
+      transition: opacity 0.4s ease-out;
+      -webkit-transition: opacity 0.4s ease-out;
+      -moz-transition: opacity 0.4s ease-out;
+      -ms-transition: opacity 0.4s ease-out;
+      -o-transition: opacity 0.4s ease-out;
+      opacity: 0;
+    }
+
+    .text-transition {
+      transition: opacity 0.4s ease-out;
+      -webkit-transition: opacity 0.4s ease-out;
+      -moz-transition: opacity 0.4s ease-out;
+      -ms-transition: opacity 0.4s ease-out;
+      -o-transition: opacity 0.4s ease-out;
+      opacity: 0;
+      /* background-color: rgb(236, 236, 236); */
+    }
+
+    .song-name {
+      font-size: 15px;
+      font-weight: 500;
+      transition: opacity 0.4s ease-in;
+      -webkit-transition: opacity 0.4s ease-in;
+      -moz-transition: opacity 0.4s ease-in;
+      -ms-transition: opacity 0.4s ease-in;
+      -o-transition: opacity 0.4s ease-in;
+      opacity: 1;
+    }
+
+    .artist-name {
+      font-size: 14px;
+      font-weight: 400;
+      transition: opacity 0.4s ease-in;
+      -webkit-transition: opacity 0.4s ease-in;
+      -moz-transition: opacity 0.4s ease-in;
+      -ms-transition: opacity 0.4s ease-in;
+      -o-transition: opacity 0.4s ease-in;
+      opacity: 1;
+      margin-top: 3px;
+    }
+
+    .spotify-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1DB954;
+      text-decoration: none;
+
+    }
+
+    .block-element {
+      transition: opacity 0.4s ease-in;
+      -webkit-transition: opacity 0.4s ease-in;
+      -moz-transition: opacity 0.4s ease-in;
+      -ms-transition: opacity 0.4s ease-in;
+      -o-transition: opacity 0.4s ease-in;
+      opacity: 1;
+
     }
   </style>
 </head>
 
 <body>
   <div class="errors"></div>
-  <div class="loading">Loading...</div>
+  <!-- <div class="loading">Loading...</div> -->
 
-  <div class="song-name"></div>
-  <div class="artist-name"></div>
-  <img src="" class="artwork" />
-  <a href="" class="spotify-link" target="_blank">Spotify</div>
+  <div class="song-name">&nbsp;</div>
+  <div class="artist-name">&nbsp;</div>
+  <div style="margin-top: 7px; height:180px; width: 180px;">
+    <img src="" class="artwork display-none" />
+  </div>
+  <div style="margin-top: 11px;" class="block-element">
+    <a href="" class="spotify-link" target="_blank">&nbsp;</a>
+  </div>
 
-    <!-- <script src="dist/main.js"></script> -->
-    <script src="src/index.js"></script>
+  <!-- <script src="dist/main.js"></script> -->
+  <script src="src/index.js"></script>
 </body>
 
 </html>
